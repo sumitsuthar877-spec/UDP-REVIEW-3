@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Nursery | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 58px 8%;
+            color: white;
+            text-align: center;
+            background: linear-gradient(rgba(18, 65, 35, .80), rgba(18, 65, 35, .80)), url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80") center/cover;
+        }
+
+        .page-hero h1 {
+            color: white;
+            font-size: clamp(34px, 5vw, 48px);
+            margin-bottom: 10px
+        }
+
+        .page-hero p {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 17px
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            text-align: left;
+            margin-top: 28px
+        }
+
+        .contact-card,
+        .contact-form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(24, 60, 35, .1)
+        }
+
+        .contact-card h2,
+        .contact-form h2 {
+            color: #245b38;
+            margin-bottom: 14px
+        }
+
+        .contact-card p {
+            margin: 14px 0
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #c9d6c7;
+            border-radius: 5px;
+            font: inherit
+        }
+
+        .contact-form textarea {
+            min-height: 125px;
+            resize: vertical
+        }
+
+        .contact-form button {
+            border: none;
+            cursor: pointer;
+            font: inherit;
+            margin-top: 15px
+        }
+
+        .contact-tip {
+            background: #eaf4e5;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 18px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🌿 Green Leaf Nursery</div>
+        <nav><a href="index.html">Home</a><a href="plants.html">Plants</a><a href="about.html">About Us</a><a
+                href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <h1>Let's Talk Plants</h1>
+            <p>Have a question about a plant or need a little gardening inspiration? We would love to hear from you.</p>
+        </section>
+        <section class="section">
+            <h2>Get in Touch</h2>
+            <p class="section-intro">Use the sample details below or send a message through the demo form.</p>
+            <div class="contact-layout">
+                <section class="contact-card">
+                    <h2>Visit Our Nursery</h2>
+                    <p>📍 <strong>Address</strong><br>Green Garden Road, Your City</p>
+                    <p>📞 <strong>Phone</strong><br>+91 98765 43210</p>
+                    <p>✉️ <strong>Email</strong><br>hello@greenleaf.example</p>
+                    <p>🕒 <strong>Opening Hours</strong><br>Monday–Saturday, 9:00 AM–6:00 PM</p>
+                    <div class="contact-tip"><strong>🌱 Plant tip</strong>
+                        <p>Before choosing a plant, check the sunlight and space available where you plan to keep it.
+                        </p>
+                    </div>
+                    <p><em>These are sample contact details. Replace them with your own.</em></p>
+                </section>
+                <form class="contact-form" action="#" method="get">
+                    <h2>Send a Message</h2>
+                    <label for="name">Your Name</label><input type="text" id="name" name="name"
+                        placeholder="Enter your name" required>
+                    <label for="email">Email Address</label><input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
+                    <label for="subject">Subject</label><input type="text" id="subject" name="subject"
+                        placeholder="What is your question about?">
+                    <label for="message">Message</label><textarea id="message" name="message"
+                        placeholder="Write your message..." required></textarea>
+                    <button class="button" type="submit">Submit Message</button>
+                    <p style="margin-top:12px"><small>Demo form only; it does not send messages to a server.</small></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Green Leaf Nursery | Grow Green, Live Green</p>
+    </footer>
+</body>
+
+</html>
