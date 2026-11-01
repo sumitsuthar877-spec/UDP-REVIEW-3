@@ -51,7 +51,7 @@ nav a:hover {
     align-items: center;
     background:
         linear-gradient(90deg, rgba(13, 48, 25, 0.82), rgba(13, 48, 25, 0.12)),
-        url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80") center/cover;
+        url("plant7.jpg") center/cover;
     color: white;
 }
 
