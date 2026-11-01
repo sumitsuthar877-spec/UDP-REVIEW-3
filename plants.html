@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Nursery | Our Plants</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .plants-hero {
+            padding: 58px 8%;
+            color: white;
+            text-align: center;
+            background:
+                linear-gradient(rgba(18, 65, 35, .78), rgba(18, 65, 35, .78)),
+                url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80") center/cover;
+        }
+
+        .plants-hero h1 {
+            color: white;
+            font-size: clamp(34px, 5vw, 48px);
+            margin-bottom: 10px;
+        }
+
+        .plants-hero p {
+            max-width: 650px;
+            margin: 0 auto 22px;
+            font-size: 17px;
+        }
+
+        .plant-label {
+            display: inline-block;
+            background: #eaf4e5;
+            color: #245b38;
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plants-page {
+            padding-top: 42px;
+        }
+
+        .plants-page .card {
+            text-align: left;
+        }
+
+        .plants-page .card img {
+            height: 220px;
+            transition: transform .45s ease;
+        }
+
+        .plants-page .card:hover img {
+            transform: scale(1.06);
+        }
+
+        .plant-photo {
+            overflow: hidden;
+        }
+
+        .plant-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .plant-meta .price {
+            margin: 0;
+            font-size: 19px;
+        }
+
+        .plant-meta a {
+            text-decoration: none;
+            color: #245b38;
+            font-weight: bold;
+            border: 1px solid #b9d2b5;
+            padding: 7px 11px;
+            border-radius: 5px;
+            transition: background .3s, color .3s;
+        }
+
+        .plant-meta a:hover {
+            background: #245b38;
+            color: white;
+        }
+
+        .plant-note {
+            max-width: 900px;
+            margin: 35px auto 0;
+            padding: 20px;
+            background: #eaf4e5;
+            border-left: 5px solid #80b918;
+            border-radius: 7px;
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .plants-hero {
+                padding: 45px 7%;
+            }
+
+            .plants-page .card img {
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🌿 Green Leaf Nursery</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plants.html">Plants</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="plants-hero">
+            <h1>Find Your Perfect Plant</h1>
+            <p>Bring life to your home with our collection of beautiful indoor plants, colorful flowers, and garden
+                favorites.</p>
+            <a class="button" href="#plant-collection">Explore Collection</a>
+        </section>
+
+        <section class="section plants-page" id="plant-collection">
+            <h2>Our Plant Collection</h2>
+            <p class="section-intro">Choose a little green friend for your home or garden. Prices are sample prices for
+                this student project.</p>
+
+            <div class="cards1">
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant1.jpg"
+                            alt="Green money plant in a pot"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Easy Care</span>
+                        <h3>Money Plant</h3>
+                        <p>A popular, beginner-friendly plant for a fresh-looking room.</p>
+                        <div class="plant-meta"><span class="price">₹120</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant8.jpg"
+                            alt="Small succulent plant"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Low Water</span>
+                        <h3>Succulent</h3>
+                        <p>A compact plant that looks lovely on desks and windowsills.</p>
+                        <div class="plant-meta"><span class="price">₹90</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant5.jpg"
+                            alt="Colorful flowering plants"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Colorful</span>
+                        <h3>Flower Plant</h3>
+                        <p>Add a cheerful splash of color to balconies and gardens.</p>
+                        <div class="plant-meta"><span class="price">₹150</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant4.jpg"
+                            alt="Decorative indoor potted plant"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Indoor Favorite</span>
+                        <h3>Indoor Plant</h3>
+                        <p>A beautiful green accent for shelves, tables, and corners.</p>
+                        <div class="plant-meta"><span class="price">₹180</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant3.jpg"
+                            alt="Young plants growing in a garden"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Garden Starter</span>
+                        <h3>Garden Sapling</h3>
+                        <p>Start your own garden with a young and growing plant.</p>
+                        <div class="plant-meta"><span class="price">₹75</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="plant-photo"><img
+                            src="plant2.jpg"
+                            alt="Leafy decorative plant"></div>
+                    <div class="card-content">
+                        <span class="plant-label">Decorative</span>
+                        <h3>Decorative Plant</h3>
+                        <p>Give your space a natural look with attractive foliage.</p>
+                        <div class="plant-meta"><span class="price">₹200</span><a href="contact.html">Enquire</a></div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="plant-note">
+                <h3>🌱 Need help choosing?</h3>
+                <p>Think about how much sunlight your space gets and how often you can water your plant. Visit our <a
+                        href="services.html" style="color:#245b38;font-weight:bold;">Services page</a> for plant-care
+                    guidance, or <a href="contact.html" style="color:#245b38;font-weight:bold;">contact us</a> with your
+                    questions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Green Leaf Nursery | Grow Green, Live Green</p>
+    </footer>
+</body>
+
+</html>
